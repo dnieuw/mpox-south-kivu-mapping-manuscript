@@ -40,7 +40,7 @@ Create a config file (e.g. sample_data_long.tsv) containing the following column
 
 Run the following command:
 
-''snakemake --snakefile Snakefile_long.smk --directory results_long --config sample_data_long.tsv --cores 16''
+``snakemake --snakefile Snakefile_long.smk --directory results_long --config sample_data_long.tsv --cores 16``
 
 ### Analyze short amplicon data
 
