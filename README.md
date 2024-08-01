@@ -24,7 +24,7 @@ Additional manual curation was done by scanning through the multiple sequence al
 
 Install the required softwares using conda and following command:
 
-''conda env create -f environment.yml''
+``conda env create -f environment.yml``
 
 ### Analyze long amplicon data
 
@@ -54,7 +54,7 @@ Create a config file (e.g. sample_data_short.tsv) containing the following colum
 | 5_pool1_NB02 | /data/fastq_pass/barcode02   | /data/references/NC_003310.fasta  | /data/references/short_amplicon_primers.fasta.fasta  | /data/references/ON585033.1_truncated.fasta  | 5_SouthKivu_Apr24 | TRUE    | 30       | 150        |
 | 6_pool1_NB03 | /data/fastq_pass/barcode03   | /data/references/NC_003310.fasta  | /data/references/short_amplicon_primers.fasta.fasta  | /data/references/ON585033.1_truncated.fasta  | 6_SouthKivu_May24 | TRUE    | 30       | 150        |
 
-''snakemake --snakefile Snakefile_short.smk --directory results_short --config sample_data_short.tsv --cores 16''
+``snakemake --snakefile Snakefile_short.smk --directory results_short --config sample_data_short.tsv --cores 16``
 
 ### Analyze combined amplicon data
 
@@ -68,4 +68,4 @@ Create a config file (e.g. sample_data_combined.tsv) containing the following co
 | pool1_NB02 | 5_pool1_NB02 | /data/results_long/trimmed/pool1_NB07_trimmed.fastq   | /data/results_short/trimmed/15_pool1_NB07_trimmed.fastq | 15_SouthKivu_Oct23  | /data/references/NC_003310.fasta | 30       |
 | pool1_NB03 | 6_pool1_NB03 | /data/results_long/trimmed/pool1_NB08_trimmed.fastq   | /data/results_short/trimmed/16_pool1_NB08_trimmed.fastq | 16_SouthKivu_Mar24  | /data/references/NC_003310.fasta | 30       |
 
-''snakemake --snakefile Snakefile_combine.smk --directory results_combined --config sample_data_combined.tsv --cores 16''
+``snakemake --snakefile Snakefile_combine.smk --directory results_combined --config sample_data_combined.tsv --cores 16``
