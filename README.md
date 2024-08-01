@@ -14,7 +14,7 @@ Coverage depth was calculated using samtools mpileup with parameters “-a -A -Q
 
 Variant calling was performed by generating a VCF file using our tool bam2vcf and parameters “-af 0.1” and filtering the VCF file to retain only major variants. Major variants were incorporated in the genome using a custom vcf2consensus script and regions with coverage below the coverage threshold of 30x were masked with an “N”.
 
-After merging a multiple sequence alignment was made using gofasta following the recommendations on their [github page] (https://github.com/virus-evolution/gofasta?tab=readme-ov-file#sam-to-fasta-format-conversion)
+After merging a multiple sequence alignment was made using gofasta following the recommendations on their [github page](https://github.com/virus-evolution/gofasta?tab=readme-ov-file#sam-to-fasta-format-conversion)
 
 Additional manual curation was done by scanning through the multiple sequence alignment and verifying mutations that were only present in either the long or the short amplicon set data. The position of the mutations was verified to not match a primer location or be located in a complex homopolymeric or di-, tri-, or multimer repeat region.
 
